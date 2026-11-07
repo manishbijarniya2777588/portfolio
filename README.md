@@ -1,21 +1,12 @@
 # Manish Bijarniya — Portfolio
 
-This folder contains the single-page portfolio ready for GitHub Pages.
+The repository root `index.html` is the single-page portfolio. It reflects the résumé’s profile, education, skills, projects, problem-solving practice, and achievements. Project cards link to real contact, GitHub, or dataset destinations.
 
-## Publish with GitHub CLI
+## Publish with GitHub Pages
 
-Run these commands in PowerShell from this folder. Git, GitHub CLI (`gh`), and a GitHub CLI login are required.
+1. Open **Settings → Pages** for this repository.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select branch **main**, folder **/(root)**, and save.
+4. GitHub Pages will publish the project site at `https://manishbijarniya2777588.github.io/portfolio/`.
 
-```powershell
-gh auth login
-git init -b main
-git add index.html .nojekyll
-git commit -m "Publish portfolio"
-gh repo create manishbijarniya0112.github.io --public --source=. --remote=origin --push
-```
-
-Then open the repository's **Settings → Pages** and choose **Deploy from a branch**, branch **main**, folder **/(root)**, and **Save**. GitHub Pages will publish the site at:
-
-`https://manishbijarniya0112.github.io`
-
-Publishing source setup is described in the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+After publishing, changes pushed to `main` will update the site. The repository must be public for GitHub Free Pages.
